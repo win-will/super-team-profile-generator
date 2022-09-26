@@ -35,7 +35,7 @@ THEN I exit the application, and the HTML is generated
 
 ## Video Walkthrough
 
-![Answer the questions to build "My Team" HTML page.](./assets/videos/Walkthrough.mp4)
+https://drive.google.com/file/d/1L3CuXKeZTg0lUUOEDXZf8nNrCUzGMny2/view
 
 
 ## Screenshots
