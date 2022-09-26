@@ -35,7 +35,7 @@ THEN I exit the application, and the HTML is generated
 
 ## Video Walkthrough
 
-![Answer the questions to build "My Team" HTML page.](https://github.com/win-will/super-team-profile-generator/blob/main/assets/videos/Walkthrough.mp4)
+![Answer the questions to build "My Team" HTML page.](./assets/videos/Walkthrough.mp4)
 
 
 ## Screenshots
