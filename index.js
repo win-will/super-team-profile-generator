@@ -7,6 +7,7 @@ const Manager = require('./lib/Manager');
 
 var ids = [];
 
+//Array of inquiry objects for manager questions
 const questionsManger = [
     {
         type: "input",
@@ -63,11 +64,12 @@ const questionsManger = [
     }
 ]
 
+//Array of inquiry objects for the different types of employees questions
 const questionsBuildTeam = [
     {
         type: "list",
         name: "addTeam",
-        message: "Want to add to your team, or are you finsihed addint to your team?",
+        message: "Add a new team member? (Use arrows to select from the options.)",
         choices: ['Engineer', 'Intern', 'Finished']
     },
     {
@@ -138,6 +140,7 @@ const questionsBuildTeam = [
     }
 ]
 
+//Returns a manager HTML card using the data from a manager object
 function createManagerCard(manager){
 
 return `
@@ -168,6 +171,7 @@ return `
 `;
 }
 
+//Returns an engineer HTML card using the data from an engineer object
 function createEngineerCard(engineer){
 
     return `
@@ -198,6 +202,7 @@ function createEngineerCard(engineer){
     `;
 }
 
+//Returns an intern HTML card using the data from an intern object
 function createInternCard(intern){
 
     return `
@@ -228,6 +233,8 @@ function createInternCard(intern){
     `;
 }
 
+
+//Insert cards into base.html to then create buildTeam.html
 function createEmployeeCards(manager,teamMembers){
     const outputFile = "./dist/buildTeam.html";
     const baseFile = "./dist/base.html";
@@ -273,12 +280,14 @@ function createEmployeeCards(manager,teamMembers){
     return true;
 }
 
+//Initialize script and launch inquriy questions
 async function init(){
     let cont = true;
     let manager = null;
     let member = null;
     let teamMembers = []
 
+    //Prompt user for manager questions
     let manageAnswers = await inquirer
         .prompt(questionsManger)
             .then(answers => {
@@ -286,7 +295,8 @@ async function init(){
                 manager = new Manager(answers.managerName,parseInt(answers.managerId),answers.managerEmail,parseInt(answers.managerOffice));
 
             });
-
+    
+    //Prompt user for manager questions 
     while(cont) {
         let teamAnswers = await inquirer
         .prompt(questionsBuildTeam)

@@ -33,8 +33,15 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
-## Mock-Up
+## Video Walkthrough
 
-The following image shows a mock-up of the generated HTML’s appearance and functionality:
+![Answer the questions to build "My Team" HTML page.](https://drive.google.com/file/d/1L3CuXKeZTg0lUUOEDXZf8nNrCUzGMny2/view)
 
-![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./assets/images/10-object-oriented-programming-homework-demo.png)
+
+## Screenshots
+
+The following images shows a mock-up of the generated HTML’s appearance and functionality, as well as the console information provided to generate it.
+
+![HTML webpage titled “My Team” features three boxes listing employee names, titles, and other key info.](./assets/images/webpage-screenshot.png)
+
+![Console showing how employee names, titles, and other key info are gathered.](./assets/images/console-screenshot.png)
